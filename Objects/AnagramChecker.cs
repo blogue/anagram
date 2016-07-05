@@ -14,13 +14,11 @@ namespace AnagramChecker.Objects
       Array.Sort(wordArray);
       int counter = 0;
       int wordCount = wordArray.Length;
-      System.Console.WriteLine(wordArray);
 
       for (int i = 0; i < anagrams.Count; i++)
       {
         char[] anagramWord = anagrams[i].ToCharArray();
         Array.Sort(anagramWord);
-        System.Console.WriteLine(anagramWord);
 
         if (anagramWord.Length > wordCount)
         {
